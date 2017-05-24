@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <style>@import "LoginForm.css";</style>
+</head>
+<body>
+<form id="log_in" class="log_in" name="log_in">
+    <div><input required placeholder=" " type="text" id="login" name="login" />
+        <label for="log_in">Login</label>
+    </div>
+
+    <div><input type="email" id="email" name="email" required placeholder=" "/>
+        <label for="email">E-mail</label>
+        <div class="requirements">
+            Must be a valid email address.
+        </div>
+    </div>
+
+    <div><input required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" id="password" name="password"/>
+        <label for="password">Password</label>
+        <div class="requirements">
+            Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+        </div>
+    </div>
+    <button class="submit" name="submit">Submit</button>
+</form>
+</body>
+
+</html>
